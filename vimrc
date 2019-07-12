@@ -35,13 +35,17 @@ set noerrorbells
 set vb t_vb=
 
 "GUI stuff
-"if has("gui_running")
-"    set guioptions-=T
-"    set guioptions-=m
-"    set guioptions+=LlRrb
-"    set guioptions-=LlRrb
-"    set gcr=n:blinkon0
-"endif
+if has("gui_running")
+    set guioptions-=T
+    set guioptions-=m
+    set guioptions+=LlRrb
+    set guioptions-=LlRrb
+    set gcr=n:blinkon0
+    color ultimate
+    if has("unix")
+        set guifont=Ubuntu\ Mono\ Bold\ 12
+    endif
+endif
 
 "window stuff
 "nnoremap <Leader>x <C-w>_
