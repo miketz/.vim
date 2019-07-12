@@ -12,6 +12,7 @@ vnoremap jf <Esc>
 set ignorecase smartcase
 set nohlsearch
 set incsearch
+set hidden "allow buffer switching without saving the current buffer.
 
 set nowritebackup
 set nobackup
