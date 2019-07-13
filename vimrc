@@ -65,6 +65,8 @@ noremap <M-v> <C-b>
 noremap <M-<> gg
 noremap <M->> G
 noremap <C-l> zz
+noremap <C-x>2 :split<CR>
+noremap <C-x>3 :vsplit<CR>
 
 "if has("unix")
 "    map <Leader>p :let @+ = expand("%:p:h")<CR>
