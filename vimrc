@@ -45,6 +45,11 @@ if has("gui_running")
     if has("unix")
         set guifont=Ubuntu\ Mono\ Bold\ 12
     endif
+else "terminal
+    if has("unix")
+        set background=dark
+        color gruvbox
+    endif
 endif
 
 "window stuff
