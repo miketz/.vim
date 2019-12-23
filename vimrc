@@ -32,7 +32,10 @@ set noruler
 
 "disable bell
 set noerrorbells
-set vb t_vb=
+"set vb t_vb=
+set visualbell
+set t_vb=
+set belloff=all
 
 "GUI stuff
 if has("gui_running")
@@ -52,6 +55,7 @@ endif
 "nnoremap <Leader>q <C-w>+
 "nnoremap <Leader>f :simalt ~x<CR>
 nnoremap <Leader>d :close<CR>
+nnoremap <Leader>b :ls<CR>:b 
 nnoremap <Leader>, :only<CR>
 nnoremap <Leader>> 30<C-w>>
 nnoremap <Leader>< 30<C-w><
