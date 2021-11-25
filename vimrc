@@ -24,6 +24,10 @@ set softtabstop=4
 set shiftwidth=4
 set linespace=0
 
+" show special char for trailing whitespace
+"set list
+"set listchars=trail:·
+
 set showmatch
 set smarttab
 set expandtab
@@ -82,3 +86,8 @@ noremap <C-x>3 :vsplit<CR>
 "else
 "    map <Leader>p :let @* = expand("%:p:h")<CR>
 "endif
+
+" highlight trailing whitespace. Set this after the color theme.
+highlight ExtraWhitespace ctermbg=red guibg=red
+match ExtraWhitespace /\s\+$/
+
