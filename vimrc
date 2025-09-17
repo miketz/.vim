@@ -49,14 +49,14 @@ if has("gui_running")
     set guioptions+=LlRrb
     set guioptions-=LlRrb
     set gcr=n:blinkon0
-    color alduin
+    color default
     if has("unix")
         set guifont=Ubuntu\ Mono\ Bold\ 12
     endif
 else "terminal
     if has("unix")
         set background=dark
-        color alduin
+        color default
     endif
 endif
 
