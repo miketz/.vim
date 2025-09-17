@@ -33,6 +33,7 @@ set smarttab
 set expandtab
 set autochdir
 set noruler
+set scrolloff=0 "0 is default, but git bash for windows overwrites it
 
 "disable bell
 set noerrorbells
